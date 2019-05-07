@@ -11,6 +11,9 @@ public class Car {
 	private double price = 0;
 	
 	// Constructor for Car.class
+	public Car() {
+	}
+	
 	public Car(String make, String model, int year, double price) {
 		
 		this.make = make;

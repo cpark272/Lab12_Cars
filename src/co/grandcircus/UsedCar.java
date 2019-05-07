@@ -3,15 +3,10 @@ package co.grandcircus;
 public class UsedCar extends Car {
 	
 	// Instance variables
-	private String make = null;
-	private String model = null;
-	private int year = 0;
-	private double price = 0;
-	private double mileage;
+	private double mileage = 0;
 	
 	// Car overloaded constructor
-	public UsedCar(String make, String model, int year, double price) {
-		super(make, model, year, price);
+	public UsedCar() {
 	}
 	
 	// Using data for the parent and data specific to the class
@@ -33,7 +28,7 @@ public class UsedCar extends Car {
 	// Method override for toString to output meaningful elements
 	@Override
 	public String toString() {
-		return super.toString() + make + "\t" + model + "\t" + year + "\t" + price + "\t" + "\t" + mileage;
+		return getMake() + "\t" + getModel() + "\t" + getYear() + "\t" + getPrice() + "\t" + mileage;
 	}
 	
 	
